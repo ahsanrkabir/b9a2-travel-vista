@@ -6,10 +6,23 @@ body {
     color: rgba(19, 19, 24, 0.70);
 }
 
+.btn-primary {
+    width: 180px;
+    height: 54px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    border: 0;
+}
+
 /* nav styles */
 nav {
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav div {
@@ -30,4 +43,126 @@ nav img {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 45px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav li a {
+    color: #424247;
+    text-decoration: none;
+}
+
+/* banner section styles */
+.banner-container {
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../images/banner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.banner-title {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-info {
+    padding: 0 500px 50px;
+    color: #FFF;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.banner-form-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* border-radius: 8px; */
+    /* background: rgba(255, 255, 255, 0.30); */
+}
+
+.banner-form {
+    border: 16px solid rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    gap: 25px;
+
+}
+
+.banner-form input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+}
+
+
+
+
+
+
+
+/* responsive styles - smaller devices */
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+
+    .banner-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-title {
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .banner-info {
+        padding: 0;
+    }
+
+    .banner-form-container {
+        margin-bottom: 30px;
+    }
+
+    .banner-form {
+        flex-direction: column;
+    }
+
+    .banner-form input {
+        width: 250px;
+    }
+
+    #btn-banner {
+        width: 250px;
+    }
 }
