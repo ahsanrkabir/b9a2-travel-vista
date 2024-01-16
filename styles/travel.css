@@ -52,9 +52,14 @@ nav div {
     width: 300px;
 }
 
-nav img {
+.nav-img {
+    margin-right: 20px;
     width: 48px;
     height: 56.008px;
+}
+
+.nav-bar {
+    display: none;
 }
 
 .nav-title {
@@ -441,8 +446,26 @@ footer {
 
     /* nav */
     nav {
+        padding-top: 20px;
         flex-direction: column;
         text-align: center;
+    }
+
+    .nav-img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .nav-bar {
+        width: 10%;
+        height: 10%;
+        padding-left: 100px;
+        display: block;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+        font-weight: 800;
     }
 
     nav ul {
@@ -582,94 +605,3 @@ footer {
     }
 
 }
-
-
-
-
-/* responsive styles - smaller devices */
-
-/* @media screen and (max-width: 600px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .section-info {
-        padding: 0 20px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .nav-list {
-        margin: 0;
-        padding: 0;
-        visibility: hidden;
-    }
-
-    .banner-container {
-        margin: 0 20px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .banner-title {
-        padding: 0;
-        font-size: 2rem;
-    }
-
-    .banner-info {
-        padding: 0;
-    }
-
-    .banner-form-container {
-        margin-bottom: 30px;
-    }
-
-    .banner-form {
-        flex-direction: column;
-    }
-
-    .banner-form input {
-        width: 250px;
-    }
-
-    #btn-banner {
-        width: 250px;
-    }
-
-    .tour-container {
-        margin-bottom: 25px;
-        margin-top: 25px;
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 10px;
-    }
-
-    .tour-content {
-        width: 100%;
-    }
-
-    .tour-img-container img {
-        width: 135%;
-    }
-
-    .destination-content {
-        width: 100%;
-    }
-
-    .destination-collage {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .collage-row {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-} */
