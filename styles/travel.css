@@ -223,6 +223,121 @@ nav li a {
     height: 100%;
 } */
 
+/* promotion section styles */
+.promotion-container {
+    margin-bottom: 70px;
+}
+
+.promo-content {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.promo-card-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo-card {
+    padding: 30px;
+    width: 40%;
+    height: auto;
+}
+
+#promo-card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#promo-card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#promo-card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.promo-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* newsletter section styles */
+.newsletter-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-content {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-box input {
+    width: 400px;
+    height: 55px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.input-box button {
+    width: 400px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.newsletter-img-container {
+    border-radius: 16px;
+    background: url(../images/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55%;
+    height: 450px;
+}
+
+.short-message {
+    padding: 5px;
+    border-radius: 16px;
+    position: relative;
+    top: 280px;
+    left: 520px;
+    text-align: center;
+    width: 300px;
+    color: #FFF;
+    background-color: #FF5400;
+    transform: rotate(-19.628deg);
+}
+
+.large-text {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
 
 
 
@@ -231,11 +346,14 @@ nav li a {
 /* responsive styles - smaller devices */
 
 @media screen and (max-width:600px) {
+
+    /* common */
     body {
         margin: 0;
         padding: 0 20px;
     }
 
+    /* nav */
     nav {
         flex-direction: column;
         text-align: center;
@@ -245,6 +363,7 @@ nav li a {
         display: none;
     }
 
+    /* banner */
     .banner-container {
         margin: 30px 0;
         padding: 0;
@@ -275,6 +394,7 @@ nav li a {
         width: 250px;
     }
 
+    /* tour */
     .tour-container {
         flex-direction: column;
         padding: 0;
@@ -296,6 +416,7 @@ nav li a {
         height: 320px;
     }
 
+    /* destination */
     .destination-collage {
         display: flex;
         flex-direction: column;
@@ -311,6 +432,35 @@ nav li a {
     #card-5,
     #card-6 {
         width: 100%;
+    }
+
+    /* promotion */
+    .promo-card {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* newsletter */
+    .newsletter-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .input-box input,
+    .input-box button {
+        width: 100%;
+    }
+
+    .newsletter-img-container {
+        width: 100%;
+    }
+
+    .short-message {
+        position: static;
+        margin-top: 250px;
+        margin-left: 50px;
+        width: 200px;
     }
 }
 
