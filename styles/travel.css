@@ -27,6 +27,7 @@ body {
 
 .section-info {
     line-height: 26px;
+    margin-bottom: 20px;
     /* 162.5% */
 }
 
@@ -144,6 +145,83 @@ nav li a {
     padding-right: 100px;
 }
 
+/* destination section styles */
+.destination-content {
+    text-align: center;
+}
+
+.destination-collage {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+}
+
+.collage-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-1 {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 5.png);
+    background-size: cover;
+}
+
+#card-2 {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 8.png);
+    background-size: cover;
+}
+
+#card-3 {
+    width: 60%;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 6.png);
+    background-size: cover;
+}
+
+#card-4 {
+    width: 120%;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 7.png);
+    background-size: cover;
+}
+
+#card-5 {
+    width: 50%;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 9.png);
+    background-size: cover;
+}
+
+#card-6 {
+    width: 70%;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 11.png);
+    background-size: cover;
+}
+
+#card-7 {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 10.png);
+    background-size: cover;
+}
+
+.card-title {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* .card img {
+    width: 100%;
+    height: 100%;
+} */
 
 
 
@@ -152,10 +230,103 @@ nav li a {
 
 /* responsive styles - smaller devices */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
+    body {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .banner-container {
+        margin: 30px 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-title {
+        padding: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .banner-info {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .banner-form {
+        flex-direction: column;
+    }
+
+    .banner-form input {
+        width: 250px;
+    }
+
+    #btn-banner {
+        width: 250px;
+    }
+
+    .tour-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .tour-content {
+        width: 100%;
+    }
+
+    .tour-img-container {
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tour-img-container img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .destination-collage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collage-row {
+        flex-direction: column;
+    }
+
+    .card,
+    #card-3,
+    #card-4,
+    #card-5,
+    #card-6 {
+        width: 100%;
+    }
+}
+
+
+
+
+/* responsive styles - smaller devices */
+
+/* @media screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
+    }
+
+    .section-info {
+        padding: 0 20px;
     }
 
     nav {
@@ -169,7 +340,7 @@ nav li a {
     }
 
     .banner-container {
-        margin: 0;
+        margin: 0 20px;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -215,4 +386,21 @@ nav li a {
     .tour-img-container img {
         width: 135%;
     }
-}
+
+    .destination-content {
+        width: 100%;
+    }
+
+    .destination-collage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collage-row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+} */
