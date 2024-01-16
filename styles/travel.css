@@ -271,6 +271,53 @@ nav li a {
     font-weight: 800;
 }
 
+/* deal section styles */
+.deal-container {
+    margin-bottom: 100px;
+}
+
+.deal-content {
+    text-align: center;
+}
+
+.deal-card {
+    margin: 40px 0;
+    height: 520px;
+    background: url(../images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    justify-content: end;
+}
+
+#deal-card-reverse {
+    display: flex;
+    justify-content: start;
+}
+
+.deal-card>div {
+    margin: 60px;
+    padding: 50px;
+    width: 40%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.deal-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.deal-title {
+    margin: 10px;
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 /* newsletter section styles */
 .newsletter-container {
     margin-bottom: 100px;
@@ -478,6 +525,28 @@ footer {
         padding: 20px;
         width: 100%;
         height: auto;
+    }
+
+    /* deal */
+    .deal-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    #deal-card-reverse {
+        justify-content: end;
+    }
+
+    .deal-card>div {
+        margin: 10px;
+        padding: 5px;
+        width: 90%;
+        height: 80%;
+    }
+
+    .deal-icon {
+        flex-wrap: wrap;
     }
 
     /* newsletter */
