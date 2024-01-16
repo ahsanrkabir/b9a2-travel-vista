@@ -334,6 +334,7 @@ nav li a {
 
 /* footer styles */
 footer {
+    margin-bottom: 100px;
     padding: 100px;
     background: rgba(19, 19, 24, 0.05);
     display: flex;
@@ -500,6 +501,17 @@ footer {
         margin-left: 50px;
         width: 200px;
     }
+
+    /* footer */
+    footer {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
 }
 
 
